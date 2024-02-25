@@ -12,7 +12,6 @@ const Users = () => {
     const [userDetails, setUserDetails] = useState(null);
     useEffect(()=>{
         userService.getAll()
-
             .then(({data}) => setUsers(data))
     }, []);
 
